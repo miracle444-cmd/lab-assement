@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ugwu Miracle | Cybersecurity Student Portfolio</title>
-  <meta name="description" content="Portfolio of Ugwu Miracle, a first-year Cybersecurity student at MIVA Open University." />
+  <title>About | Ugwu Miracle</title>
+  <meta name="description" content="Education, technical skills, and interests of Ugwu Miracle, Cybersecurity student." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ===== Site Header / Navigation ===== -->
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
       <a href="index.html" class="nav-logo"><span class="bracket">&gt;</span>&nbsp;UM_<span class="cursor"></span></a>
@@ -17,8 +16,8 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links">
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="planner.html">Planner</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -27,74 +26,175 @@
   </header>
 
   <main>
-    <!-- ===== Hero Section ===== -->
-    <section class="hero">
-      <div class="container hero-grid">
+    <div class="container page-header">
+      <p class="eyebrow">About Me</p>
+      <h1>Education, skills &amp; interests</h1>
+      <p>A closer look at my academic background, the technical skills I'm building, and what I do outside the classroom.</p>
+    </div>
 
-        <div class="hero-copy reveal">
-          <p class="greeting">Hello!</p>
-          <h1>Ugwu Miracle</h1>
-          <p class="role">Aspiring Cybersecurity Professional | Passionate about Digital Safety &amp; Ethical Hacking</p>
-          <p class="bio">
-            I am a first-year Cybersecurity student with a strong interest in protecting digital systems and
-            exploring ethical hacking. I am passionate about learning the latest cybersecurity tools and
-            techniques, and I am eager to apply my skills in practical projects and internships. I thrive in
-            collaborative environments, enjoy problem-solving, and am committed to continuous learning in the
-            fast-evolving field of cybersecurity.
+    <!-- ===== Education & Aspirations ===== -->
+    <section>
+      <div class="container about-columns">
+        <article class="info-panel reveal">
+          <h3>Educational Background</h3>
+          <dl>
+            <div>
+              <dt>Current</dt>
+              <dd>B.Sc. Cybersecurity — MIVA Open University (First Year)</dd>
+            </div>
+            <div>
+              <dt>Previous</dt>
+              <dd>Secondary Education — Eastersprings International Schools</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="info-panel reveal">
+          <h3>Career Aspirations</h3>
+          <p style="color: var(--text-main);">
+            Aspiring Cybersecurity Professional | Passionate about Digital Safety &amp; Ethical Hacking.
           </p>
-          <div class="hero-actions">
-            <a href="projects.html" class="btn btn-primary">View My Projects</a>
-            <a href="contact.html" class="btn btn-outline">Get In Touch</a>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal">
-          <div class="avatar-frame" style="margin-bottom: 1.25rem;">
-            <img src="image.jpeg" alt="Portrait photo of Ugwu Miracle" />
-          </div>
-
-          <!-- Signature element: animated terminal intro -->
-          <div class="terminal" aria-hidden="false">
-            <div class="terminal-bar">
-              <span></span><span></span><span></span>
-              <span class="terminal-title">bash — intro.sh</span>
-            </div>
-            <div class="terminal-body" id="terminal-body">
-              <!-- Fallback content shown if JavaScript is disabled -->
-              <div class="line"><span class="prompt">guest@portfolio:~$</span> <span class="out">whoami</span></div>
-              <div class="line"><span class="out-accent">Ugwu Miracle</span></div>
-              <div class="line"><span class="prompt">guest@portfolio:~$</span> <span class="out">status --check</span></div>
-              <div class="line"><span class="out">Learning. Building. Securing systems.</span></div>
-            </div>
-          </div>
-        </div>
-
+          <p style="margin-top: 0.7rem;">
+            I'm working toward a career defending digital systems — combining hands-on practice with
+            continuous, structured learning.
+          </p>
+        </article>
       </div>
     </section>
 
-    <!-- ===== Quick highlights strip ===== -->
-    <section class="highlights">
-      <div class="container card-grid">
-        <article class="card reveal">
-          <p class="tag">Currently</p>
-          <h3>B.Sc. Cybersecurity</h3>
-          <p>Student at MIVA Open University, building a foundation in network security and ethical hacking.</p>
-        </article>
-        <article class="card reveal">
-          <p class="tag">Focus</p>
-          <h3>Digital Safety</h3>
-          <p>Exploring threat analysis, Linux, and Python to understand how systems are attacked and defended.</p>
-        </article>
-        <article class="card reveal">
-          <p class="tag">Beyond Class</p>
-          <h3>Gaming &amp; Learning</h3>
-          <p>When I'm not studying, I enjoy gaming and continuously picking up new technical skills.</p>
-        </article>
+    <!-- ===== Technical Skills ===== -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Capabilities</p>
+          <h2>Technical Skills</h2>
+          <p>Skills I'm actively developing as a first-year Cybersecurity student.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-label"><span>Network Security</span><span class="level">Developing</span></div>
+            <div class="skill-bar"><span style="--fill: 55%;"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>Ethical Hacking Basics</span><span class="level">Developing</span></div>
+            <div class="skill-bar"><span style="--fill: 45%;"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>Linux</span><span class="level">Comfortable</span></div>
+            <div class="skill-bar"><span style="--fill: 65%;"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>Python</span><span class="level">Comfortable</span></div>
+            <div class="skill-bar"><span style="--fill: 60%;"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>HTML / CSS</span><span class="level">Confident</span></div>
+            <div class="skill-bar"><span style="--fill: 75%;"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>JavaScript</span><span class="level">Comfortable</span></div>
+            <div class="skill-bar"><span style="--fill: 60%;"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>Threat Analysis</span><span class="level">Developing</span></div>
+            <div class="skill-bar"><span style="--fill: 40%;"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Course Schedule Table ===== -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">First-Year Modules</p>
+          <h2>Academic Course Schedule</h2>
+          <p>An overview of the modules I'm currently taking at MIVA Open University.</p>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Course Code</th>
+                <th scope="col">Module</th>
+                <th scope="col">Focus Area</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CYB 101</td>
+                <td>Foundations of Cybersecurity</td>
+                <td>Core concepts &amp; terminology</td>
+                <td>In progress</td>
+              </tr>
+              <tr>
+                <td>COS 106</td>
+                <td>Introduction to Web Technologies</td>
+                <td>HTML, CSS &amp; JavaScript</td>
+                <td>In progress</td>
+              </tr>
+              <tr>
+                <td>CYB 110</td>
+                <td>Networking Fundamentals</td>
+                <td>Protocols &amp; network security</td>
+                <td>In progress</td>
+              </tr>
+              <tr>
+                <td>CSC 121</td>
+                <td>Introduction to Programming (Python)</td>
+                <td>Scripting &amp; automation</td>
+                <td>In progress</td>
+              </tr>
+              <tr>
+                <td>CYB 115</td>
+                <td>Ethical Hacking Basics</td>
+                <td>Reconnaissance &amp; vulnerability testing</td>
+                <td>Upcoming</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Intro media placeholder ===== -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Say Hello</p>
+          <h2>Video Introduction</h2>
+        </div>
+
+        <div class="media-placeholder">
+          <div class="play-icon">&#9658;</div>
+          <p>A short video introduction will be added here.</p>
+          <!-- Semantic multimedia placeholder: replace src with a real file, e.g. "intro.mp4" -->
+          <video controls poster="image.jpeg" aria-label="Video introduction placeholder">
+            <source src="" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Hobbies ===== -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Outside the Classroom</p>
+          <h2>Hobbies &amp; Interests</h2>
+        </div>
+        <div class="hobby-list">
+          <span class="hobby-chip">Gaming</span>
+          <span class="hobby-chip">Continuous Learning</span>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- ===== Site Footer ===== -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>&copy; 2026 Ugwu Miracle. Built for COS 106 — Introduction to Web Technologies.</p>

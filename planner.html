@@ -1,77 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Academic Planner | Ugwu Miracle</title>
-  <meta name="description" content="Interactive academic task planner built with vanilla JavaScript." />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Planner — Ugwu Miracle</title>
+  <meta name="description" content="Interactive task planner for tracking academic to-dos.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="index.html" class="nav-logo"><span class="bracket">&gt;</span>&nbsp;UM_<span class="cursor"></span></a>
-      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="planner.html" aria-current="page">Planner</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>
+          UGWU_MIRACLE
+          <small>Cybersecurity Student · MIVA Open University</small>
+        </span>
+      </div>
+      <nav class="mainnav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="planner.html">planner</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <div class="container page-header">
-      <p class="eyebrow">Stay Organized</p>
-      <h1>Academic Planner</h1>
-      <p>A simple task manager for tracking coursework, readings, and lab exercises. Add a task, mark it complete when you're done, or remove it entirely.</p>
-    </div>
-
     <section>
-      <div class="container">
-        <div class="planner-panel">
+      <div class="wrap">
+        <p class="eyebrow">./planner --interactive</p>
+        <h1>Academic Planner</h1>
+        <p class="lead">Track coursework and deadlines. Add a task, mark it complete when it's done, or delete it once it's no longer needed.</p>
 
-          <form id="task-form" class="task-form">
-            <label for="task-input" class="sr-only" style="position:absolute; left:-9999px;">Add a new task</label>
-            <input
-              type="text"
-              id="task-input"
-              name="task-input"
-              placeholder="e.g. Complete Chapter 3 reading on network protocols"
-              autocomplete="off"
-              required
-            />
-            <button type="submit" class="btn btn-primary">Add Task</button>
+        <div class="planner-box">
+          <form id="task-form" novalidate>
+            <label for="task-input">New task</label>
+            <div class="task-input-row">
+              <input type="text" id="task-input" name="task-input" placeholder="e.g. Finish Threat Analysis lab report" autocomplete="off">
+              <button type="submit" class="btn">+ Add Task</button>
+            </div>
           </form>
 
-          <div class="task-stats">
-            <span id="task-count">0 / 0 completed</span>
-            <span>Vanilla JS &middot; DOM &middot; Arrays</span>
-          </div>
-
           <ul id="task-list" class="task-list" aria-live="polite"></ul>
+          <p id="planner-empty" class="planner-empty">No tasks yet — add your first one above.</p>
 
-          <div id="empty-state" class="empty-state" style="display: none;">
-            No tasks yet — add your first one above.
+          <div class="planner-stats">
+            <span>Total: <strong id="stat-total">0</strong></span>
+            <span>Completed: <strong id="stat-done">0</strong></span>
           </div>
-
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; 2026 Ugwu Miracle. Built for COS 106 — Introduction to Web Technologies.</p>
-      <div class="footer-links">
-        <a href="https://github.com/miracle444-cmd" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="contact.html">Contact</a>
-      </div>
+  <footer>
+    <div class="wrap">
+      &copy; 2026 Ugwu Miracle — <span class="glow">COS 106</span> Term Project, MIVA Open University
     </div>
   </footer>
 

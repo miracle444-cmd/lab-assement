@@ -1,207 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Ugwu Miracle</title>
-  <meta name="description" content="Education, technical skills, and interests of Ugwu Miracle, Cybersecurity student." />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Ugwu Miracle</title>
+  <meta name="description" content="Education, skills, and interests of Ugwu Miracle, Cybersecurity student.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="index.html" class="nav-logo"><span class="bracket">&gt;</span>&nbsp;UM_<span class="cursor"></span></a>
-      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" aria-current="page">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="planner.html">Planner</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>
+          UGWU_MIRACLE
+          <small>Cybersecurity Student · MIVA Open University</small>
+        </span>
+      </div>
+      <nav class="mainnav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="planner.html">planner</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <div class="container page-header">
-      <p class="eyebrow">About Me</p>
-      <h1>Education, skills &amp; interests</h1>
-      <p>A closer look at my academic background, the technical skills I'm building, and what I do outside the classroom.</p>
-    </div>
-
-    <!-- ===== Education & Aspirations ===== -->
     <section>
-      <div class="container about-columns">
-        <article class="info-panel reveal">
-          <h3>Educational Background</h3>
-          <dl>
-            <div>
-              <dt>Current</dt>
-              <dd>B.Sc. Cybersecurity — MIVA Open University (First Year)</dd>
-            </div>
-            <div>
-              <dt>Previous</dt>
-              <dd>Secondary Education — Eastersprings International Schools</dd>
-            </div>
-          </dl>
-        </article>
-
-        <article class="info-panel reveal">
-          <h3>Career Aspirations</h3>
-          <p style="color: var(--text-main);">
-            Aspiring Cybersecurity Professional | Passionate about Digital Safety &amp; Ethical Hacking.
-          </p>
-          <p style="margin-top: 0.7rem;">
-            I'm working toward a career defending digital systems — combining hands-on practice with
-            continuous, structured learning.
-          </p>
-        </article>
+      <div class="wrap">
+        <p class="eyebrow">cat about.txt</p>
+        <h1>About Me</h1>
+        <p class="lead">Aspiring Cybersecurity Professional | Passionate about Digital Safety &amp; Ethical Hacking.</p>
       </div>
     </section>
 
-    <!-- ===== Technical Skills ===== -->
     <section>
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">Capabilities</p>
-          <h2>Technical Skills</h2>
-          <p>Skills I'm actively developing as a first-year Cybersecurity student.</p>
+      <div class="wrap two-col">
+        <div>
+          <h2>Education</h2>
+          <p><strong style="color:var(--text)">Current:</strong> B.Sc. Cybersecurity Student, MIVA Open University.</p>
+          <p><strong style="color:var(--text)">Previous:</strong> Secondary education, Eastersprings International Schools.</p>
         </div>
-
-        <div class="skills-grid">
-          <div class="skill-item">
-            <div class="skill-label"><span>Network Security</span><span class="level">Developing</span></div>
-            <div class="skill-bar"><span style="--fill: 55%;"></span></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-label"><span>Ethical Hacking Basics</span><span class="level">Developing</span></div>
-            <div class="skill-bar"><span style="--fill: 45%;"></span></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-label"><span>Linux</span><span class="level">Comfortable</span></div>
-            <div class="skill-bar"><span style="--fill: 65%;"></span></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-label"><span>Python</span><span class="level">Comfortable</span></div>
-            <div class="skill-bar"><span style="--fill: 60%;"></span></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-label"><span>HTML / CSS</span><span class="level">Confident</span></div>
-            <div class="skill-bar"><span style="--fill: 75%;"></span></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-label"><span>JavaScript</span><span class="level">Comfortable</span></div>
-            <div class="skill-bar"><span style="--fill: 60%;"></span></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-label"><span>Threat Analysis</span><span class="level">Developing</span></div>
-            <div class="skill-bar"><span style="--fill: 40%;"></span></div>
-          </div>
+        <div>
+          <h2>Hobbies</h2>
+          <p>Gaming — particularly PC and mobile sports/action titles like eFootball and Free Fire — alongside technical hardware and network troubleshooting, and continuous self-directed learning.</p>
         </div>
       </div>
     </section>
 
-    <!-- ===== Course Schedule Table ===== -->
     <section>
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">First-Year Modules</p>
-          <h2>Academic Course Schedule</h2>
-          <p>An overview of the modules I'm currently taking at MIVA Open University.</p>
-        </div>
+      <div class="wrap">
+        <p class="eyebrow">ls skills/</p>
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>Network Security</li>
+          <li>Ethical Hacking basics</li>
+          <li>Linux</li>
+          <li>Python</li>
+          <li>HTML/CSS</li>
+          <li>JavaScript</li>
+          <li>Threat Analysis</li>
+        </ul>
+      </div>
+    </section>
 
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">cat semester_schedule.csv</p>
+        <h2>Current Semester Course Schedule</h2>
         <div class="table-wrap">
           <table>
+            <caption>First-year Cybersecurity course schedule — current semester</caption>
             <thead>
               <tr>
                 <th scope="col">Course Code</th>
-                <th scope="col">Module</th>
-                <th scope="col">Focus Area</th>
-                <th scope="col">Status</th>
+                <th scope="col">Course Title</th>
+                <th scope="col">Day</th>
+                <th scope="col">Time</th>
+                <th scope="col">Mode</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>CYB 101</td>
-                <td>Foundations of Cybersecurity</td>
-                <td>Core concepts &amp; terminology</td>
-                <td>In progress</td>
+                <td>COS 101</td>
+                <td>Introduction to Computer Science</td>
+                <td>Monday</td>
+                <td>9:00 AM – 11:00 AM</td>
+                <td>Online</td>
               </tr>
               <tr>
                 <td>COS 106</td>
                 <td>Introduction to Web Technologies</td>
-                <td>HTML, CSS &amp; JavaScript</td>
-                <td>In progress</td>
+                <td>Monday</td>
+                <td>1:00 PM – 3:00 PM</td>
+                <td>Online</td>
               </tr>
               <tr>
-                <td>CYB 110</td>
-                <td>Networking Fundamentals</td>
-                <td>Protocols &amp; network security</td>
-                <td>In progress</td>
+                <td>CYB 101</td>
+                <td>Foundations of Cybersecurity</td>
+                <td>Tuesday</td>
+                <td>10:00 AM – 12:00 PM</td>
+                <td>Online</td>
               </tr>
               <tr>
-                <td>CSC 121</td>
-                <td>Introduction to Programming (Python)</td>
-                <td>Scripting &amp; automation</td>
-                <td>In progress</td>
+                <td>MTH 101</td>
+                <td>Elementary Mathematics I</td>
+                <td>Wednesday</td>
+                <td>9:00 AM – 11:00 AM</td>
+                <td>Online</td>
               </tr>
               <tr>
-                <td>CYB 115</td>
-                <td>Ethical Hacking Basics</td>
-                <td>Reconnaissance &amp; vulnerability testing</td>
-                <td>Upcoming</td>
+                <td>CYB 102</td>
+                <td>Introduction to Networking</td>
+                <td>Thursday</td>
+                <td>11:00 AM – 1:00 PM</td>
+                <td>Online</td>
+              </tr>
+              <tr>
+                <td>GST 102</td>
+                <td>Use of English II</td>
+                <td>Friday</td>
+                <td>9:00 AM – 10:30 AM</td>
+                <td>Online</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
     </section>
-
-    <!-- ===== Intro media placeholder ===== -->
-    <section>
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">Say Hello</p>
-          <h2>Video Introduction</h2>
-        </div>
-
-        <div class="media-placeholder">
-          <div class="play-icon">&#9658;</div>
-          <p>A short video introduction will be added here.</p>
-          <!-- Semantic multimedia placeholder: replace src with a real file, e.g. "intro.mp4" -->
-          <video controls poster="image.jpeg" aria-label="Video introduction placeholder">
-            <source src="" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Hobbies ===== -->
-    <section>
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">Outside the Classroom</p>
-          <h2>Hobbies &amp; Interests</h2>
-        </div>
-        <div class="hobby-list">
-          <span class="hobby-chip">Gaming</span>
-          <span class="hobby-chip">Continuous Learning</span>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; 2026 Ugwu Miracle. Built for COS 106 — Introduction to Web Technologies.</p>
-      <div class="footer-links">
-        <a href="https://github.com/miracle444-cmd" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="contact.html">Contact</a>
-      </div>
+  <footer>
+    <div class="wrap">
+      &copy; 2026 Ugwu Miracle — <span class="glow">COS 106</span> Term Project, MIVA Open University
     </div>
   </footer>
 

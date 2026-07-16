@@ -1,105 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Ugwu Miracle</title>
-  <meta name="description" content="Cybersecurity and web development project samples by Ugwu Miracle." />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Ugwu Miracle</title>
+  <meta name="description" content="Selected projects by Ugwu Miracle, Cybersecurity student.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="index.html" class="nav-logo"><span class="bracket">&gt;</span>&nbsp;UM_<span class="cursor"></span></a>
-      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html" aria-current="page">Projects</a></li>
-        <li><a href="planner.html">Planner</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>
+          UGWU_MIRACLE
+          <small>Cybersecurity Student · MIVA Open University</small>
+        </span>
+      </div>
+      <nav class="mainnav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="planner.html">planner</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <div class="container page-header">
-      <p class="eyebrow">Portfolio</p>
-      <h1>Selected Projects</h1>
-      <p>A sample of cybersecurity and web development projects I've worked on as I build my skills.</p>
-    </div>
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">ls projects/</p>
+        <h1>Projects</h1>
+        <p class="lead">A short walkthrough of the portfolio, followed by three builds spanning security tooling and front-end work.</p>
+
+        <div class="video-frame">
+          <video controls preload="metadata" poster="image.jpeg">
+            <source src="portfolio-walkthrough.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p class="video-caption">▶ portfolio-walkthrough.mp4 — a quick tour of these three builds.</p>
+      </div>
+    </section>
 
     <section>
-      <div class="container card-grid">
+      <div class="wrap">
+        <div class="card-grid">
 
-        <article class="project-card reveal">
-          <div class="project-thumb">[ project-01.png ]</div>
-          <div class="project-body">
-            <div class="stack-tags">
-              <span>Python</span><span>Networking</span>
-            </div>
-            <h3>Network Vulnerability Scanner</h3>
-            <p>
-              A beginner-friendly Python script that scans a local network for open ports and flags common
-              misconfigurations, helping build a practical understanding of reconnaissance techniques.
-            </p>
-            <div class="project-links">
-              <a href="https://github.com/miracle444-cmd" target="_blank" rel="noopener noreferrer">GitHub Repo &rarr;</a>
-              <a href="https://github.com/miracle444-cmd" target="_blank" rel="noopener noreferrer">Live Demo &rarr;</a>
-            </div>
-          </div>
-        </article>
+          <article class="card">
+            <span class="tag">Python · Security</span>
+            <img src="project-scanner.jpg" alt="Terminal output of a network vulnerability scanner listing open ports">
+            <h3>Basic Network Vulnerability Scanner</h3>
+            <p>A Python script that sweeps a target IP range and reports open ports, helping identify unsecured entry points before an attacker does. Built on the socket module with a simple threaded scan loop for speed.</p>
+            <a href="#" class="btn secondary" data-project="scanner">View Project →</a>
+          </article>
 
-        <article class="project-card reveal">
-          <div class="project-thumb">[ project-02.png ]</div>
-          <div class="project-body">
-            <div class="stack-tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
-            <h3>Student Academic Portfolio</h3>
-            <p>
-              This very website — a responsive, multi-page portfolio and planner built from scratch with
-              semantic HTML, CSS Grid/Flexbox, and vanilla JavaScript for my COS 106 term project.
-            </p>
-            <div class="project-links">
-              <a href="https://github.com/miracle444-cmd" target="_blank" rel="noopener noreferrer">GitHub Repo &rarr;</a>
-              <a href="index.html">Live Demo &rarr;</a>
-            </div>
-          </div>
-        </article>
+          <article class="card">
+            <span class="tag">Frontend · UI</span>
+            <img src="project-dashboard.jpg" alt="Mockup of a home router dashboard showing network speed and connected devices">
+            <h3>Home Router Dashboard UI</h3>
+            <p>A front-end mockup for monitoring 5G network speed, signal strength, and connected devices at a glance. Focused on clear data hierarchy so a non-technical user can spot problems fast.</p>
+            <a href="#" class="btn secondary" data-project="dashboard">View Project →</a>
+          </article>
 
-        <article class="project-card reveal">
-          <div class="project-thumb">[ project-03.png ]</div>
-          <div class="project-body">
-            <div class="stack-tags">
-              <span>Linux</span><span>Security</span>
-            </div>
-            <h3>Home Lab Threat Analysis Notes</h3>
-            <p>
-              A documented Kali Linux home lab used to practice ethical hacking fundamentals — including
-              write-ups on reconnaissance, basic exploitation labs, and threat analysis notes.
-            </p>
-            <div class="project-links">
-              <a href="https://github.com/miracle444-cmd" target="_blank" rel="noopener noreferrer">GitHub Repo &rarr;</a>
-              <a href="https://github.com/miracle444-cmd" target="_blank" rel="noopener noreferrer">Live Demo &rarr;</a>
-            </div>
-          </div>
-        </article>
+          <article class="card">
+            <span class="tag">Frontend · Community</span>
+            <img src="project-esports.jpg" alt="Responsive webpage for a competitive gaming clan showing roster and match schedule">
+            <h3>eSports Team Hub</h3>
+            <p>A responsive webpage built for a competitive gaming clan, featuring a roster, match schedule, and results tracker so members and fans can follow the team from any device.</p>
+            <a href="#" class="btn secondary" data-project="esports">View Project →</a>
+          </article>
 
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; 2026 Ugwu Miracle. Built for COS 106 — Introduction to Web Technologies.</p>
-      <div class="footer-links">
-        <a href="https://github.com/miracle444-cmd" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="contact.html">Contact</a>
-      </div>
+  <footer>
+    <div class="wrap">
+      &copy; 2026 Ugwu Miracle — <span class="glow">COS 106</span> Term Project, MIVA Open University
     </div>
   </footer>
 
